@@ -1,0 +1,25 @@
+ public static void main(String[] args) {
+        //创建pie所需的内部类并赋值
+        PieImpl.PieData pieData = new PieImpl.PieData();
+        pieData.setName("A");
+        pieData.setValue(20);
+        PieImpl.PieData pieData1 = new PieImpl.PieData();
+        pieData1.setName("B");
+        pieData1.setValue(20);
+        PieImpl.PieData pieData2 = new PieImpl.PieData();
+        pieData2.setName("C");
+        pieData2.setValue(20);
+        //end
+        //将赋值的内部类添加到集合
+        List<PieImpl.PieData> datas = new ArrayList<>();
+        datas.add(pieData);
+        datas.add(pieData1);
+        datas.add(pieData2);
+        //end
+        //创建pie工具接口
+        Pie pie = new PieImpl(datas);
+        List<PieImpl.PieData> dataList = pie.getDataList();//获取数据
+        Set<String> legend = pie.getLegend();//获取名称项
+        System.out.println(dataList.toString());
+        System.out.println(new ArrayList<>(legend).toString());
+    }

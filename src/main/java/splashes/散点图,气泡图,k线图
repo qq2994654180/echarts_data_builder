@@ -1,0 +1,43 @@
+public static void main(String[] args) {
+        //制造一个数据项(散点图两个数据分别是，x,y坐标)
+        (气泡图三个数据，x,y，能量（决定气泡大小）)
+       (k线图四个数据，// 开盘，收盘，最低，最高)
+        List<String> particleList = DataTool.getParticleList(12, 20);
+        List<String> particleList2 = DataTool.getParticleList(11, 20);
+        List<String> particleList3 = DataTool.getParticleList(13, 20);
+        List<String> particleList4 = DataTool.getParticleList(16, 20);
+        List<String> particleList5 = DataTool.getParticleList(18, 20);
+        List<String> particleList6= DataTool.getParticleList(19, 20);
+        ArrayList<List<?>> lists = new ArrayList<>();
+        lists.add(particleList);
+        lists.add(particleList2);
+        lists.add(particleList3);
+        lists.add(particleList4);
+        lists.add(particleList5);
+        lists.add(particleList6);
+        //end
+        //添加一个数据项
+        Map<String, List<List<?>>> map = new HashMap<>();
+        map.put("ceshi",lists);
+        //end
+        //创建工具接口
+        Splashes splashes = new SplashesImpl(map);
+        //end
+        Map<String, List<List<?>>> dataList = splashes.getDataList();//获取数据
+        Set<String> legend = splashes.getLegend();//获取名称项
+        //制造轴数据
+        ArrayList<Date> dates = new ArrayList<>();
+        dates.add(new Date());
+        dates.add(new Date());
+        dates.add(new Date());
+        dates.add(new Date());
+        dates.add(new Date());
+        //end
+        List<String> a = splashes.getDateX(dates, "yyyy-MM-dd");//获取时间类型的X轴
+        List<String> b = splashes.getDateY(dates, "yyyy-MM-dd");//获取时间类型的Y轴
+
+        System.out.println(dataList.toString());
+        System.out.println(new ArrayList<>(legend).toString());
+        System.out.println(a.toString());
+        System.out.println(b.toString());
+    }
