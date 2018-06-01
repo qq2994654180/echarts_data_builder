@@ -38,7 +38,7 @@ public abstract class BasicsBean {
      * @return java.util.List<java.lang.String>
      *     带符号项的Y轴
      */
-    public List<String> getY(List<?> objects,String symbol){
+    public List<String> getY(List<?> objects, String symbol){
         List<String> Y = new ArrayList<>();
         for (Object s : objects) {
             Y.add(s.toString()+symbol);
@@ -53,7 +53,7 @@ public abstract class BasicsBean {
         * @return java.util.List<java.lang.String>
         *      时间Y轴
     　*/
-    public List<String> getDateY(List<Date> dates,String format){
+    public List<String> getDateY(List<Date> dates, String format){
         List<String> formatDate= new ArrayList<>();
         for (Date date : dates) {
             String s = DateTool.formatDate(format, date);
@@ -100,7 +100,7 @@ public abstract class BasicsBean {
         * @param [objects, symbol]
         * @return java.util.List<java.lang.String>
     　*/
-    public List<String> getX(List<?> objects,String symbol){
+    public List<String> getX(List<?> objects, String symbol){
         List<String> x=new ArrayList<>();
         for (Object object : objects) {
             x.add(object.toString()+symbol);
@@ -116,5 +116,5 @@ public abstract class BasicsBean {
      * @return java.util.List<java.lang.String>
      *     获取名称项
      */
-     public abstract Set<String> getLegend();
+   public abstract Set<String> getLegend();
 }

@@ -2,6 +2,7 @@ public static void main(String[] args) {
         //制造一个数据项(散点图两个数据分别是，x,y坐标)
         (气泡图三个数据，x,y，能量（决定气泡大小）)
        (k线图四个数据，// 开盘，收盘，最低，最高)
+       (和弦图四个数据)
         List<String> particleList = DataTool.getParticleList(12, 20);
         List<String> particleList2 = DataTool.getParticleList(11, 20);
         List<String> particleList3 = DataTool.getParticleList(13, 20);

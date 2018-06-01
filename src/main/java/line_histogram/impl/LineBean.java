@@ -66,7 +66,7 @@ final class LineBean extends BasicsBean{
         * 取某项最大
         *
     　*/
-    public String getMax(String legend){
+     String getMax(String legend){
             List<?> list = dataList.get(legend);
             return DataTool.getMax(list);
     }
@@ -77,7 +77,7 @@ final class LineBean extends BasicsBean{
         * @return java.lang.String
         * 取某项最小
     　*/
-    public String getMin(String legend){
+     String getMin(String legend){
         List<?> list = dataList.get(legend);
         return DataTool.getMin(list);
     }
@@ -88,7 +88,7 @@ final class LineBean extends BasicsBean{
         * @return java.lang.String
         * 取某项平均
     　*/
-    public String getAverage(String legend){
+     String getAverage(String legend){
         List<?> list = dataList.get(legend);
         return DataTool.getAverage(list);
     }

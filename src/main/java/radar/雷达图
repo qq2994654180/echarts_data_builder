@@ -1,13 +1,4 @@
-import radar.Radar;
-import radar.impl.RadarImpl;
-import java.util.*;
-
-/**
- * @author liuguotao
- * @date 2018/5/31 003110:37
- */
-public class TestA {
-    public static void main(String[] args) {
+public static void main(String[] args) {
         //制造数据
         List<Integer> data = new ArrayList<>();
         data.add(5);
@@ -52,4 +43,3 @@ public class TestA {
         System.out.println(data1);
 
     }
-}
