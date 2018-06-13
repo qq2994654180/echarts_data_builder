@@ -1,16 +1,4 @@
-import radar.Radar;
-import radar.impl.RadarImpl;
-import relation.Relation;
-import relation.impl.RelationImpl;
-
-import java.util.*;
-
-/**
- * @author liuguotao
- * @date 2018/5/31 003110:37
- */
-public class TestA {
-    public static void main(String[] args) {
+ public static void main(String[] args) {
         /**制造数据*/
         RelationImpl.RelationLinksData relationLinksData = new RelationImpl.RelationLinksData();
         relationLinksData.setName("父亲");//关系
@@ -44,4 +32,3 @@ public class TestA {
         System.out.println(links.toString());
         System.out.println(nodes.toString());
     }
-}
