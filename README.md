@@ -1,4 +1,4 @@
-# echarts_date_builder
+# echarts_data_builder
 实现echarts图表所需的数据格式化
 
 本工具没有页面，是一个工具包，下载下来后直接导入就可以使用
