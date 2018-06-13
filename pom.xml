@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.liu</groupId>
-    <artifactId>echarts_date_builder</artifactId>
+    <artifactId>echarts_data_builder</artifactId>
     <version>1.0-SNAPSHOT</version>
 
 
